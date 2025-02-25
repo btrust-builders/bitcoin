@@ -39,7 +39,7 @@ bitcoin-cli stop
    ```bash
    # Start a Bitcoin Core node in regtest mode
    #!/bin/bash
-   bitcoind -regtest -printtoconsole -server -rpcuser=user -rpcpassword=password -rpcport=18332 -txindex=1 -debug=net -datadir=<PATH_TO_DATA_DIR>
+   bitcoind -regtest -printtoconsole -server -rpcuser=user -rpcpassword=password -rpcport=18332 -txindex=1 -debug=net -fallbackfee=0.0001 -datadir=<PATH_TO_DATA_DIR>
    ```
 
     #### **Create Command Wrapper for Regtest**
